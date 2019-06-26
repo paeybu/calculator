@@ -1,18 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:columnCount="4"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_rowWeight="1"
+        android:layout_columnSpan="4"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginRight="24dp"
+        android:text="0"
+        android:textSize="72sp" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/ButtonC"
+        style="@style/calc_element_top_row"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/ButtonSwitch"
+        style="@style/calc_element_top_row"
+        android:text="+/-" />
+
+    <Button
+        android:id="@+id/ButtonPercent"
+        style="@style/calc_element_top_row"
+        android:text="%" />
+
+    <Button
+        android:id="@+id/ButtonDivide"
+        style="@style/calc_element_orange"
+        android:text="÷" />
+
+    <Button
+        android:id="@+id/Button7"
+        style="@style/calc_element"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/Button8"
+        style="@style/calc_element"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/Button9"
+        style="@style/calc_element"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/ButtonX"
+        style="@style/calc_element_orange"
+        android:text="x" />
+
+    <Button
+        android:id="@+id/Button4"
+        style="@style/calc_element"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/Button5"
+        style="@style/calc_element"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/Button6"
+        style="@style/calc_element"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/ButtonMinus"
+        style="@style/calc_element_orange"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/Button1"
+        style="@style/calc_element"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/Button2"
+        style="@style/calc_element"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/Button3"
+        style="@style/calc_element"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/ButtonPlus"
+        style="@style/calc_element_orange"
+        android:text="+" />
+
+
+    <Button
+        android:id="@+id/Button0"
+        style="@style/calc_element"
+        android:layout_columnSpan="2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/ButtonDot"
+        style="@style/calc_element"
+        android:text="."
+        />
+
+    <Button
+        android:id="@+id/ButtonEqual"
+        style="@style/calc_element"
+        android:text="="
+        />
+
+
+    </GridLayout>
